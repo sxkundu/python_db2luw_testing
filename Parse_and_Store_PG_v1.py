@@ -7,6 +7,7 @@ import psycopg2.extras
 import queue
 import threading
 import time
+import glob, os, shutil
 
 # import dicom
 
@@ -16,6 +17,19 @@ Helper Methods
 
 # Global variables to handle thread communications
 global_fifo_q = queue.Queue()
+
+class ReadDICOMFiles:
+    def __init__(self, source_directory):
+        self.source_directory = source_directory
+        os.chdir(self.source_directory)
+        print ('In ReadDICOMFiles...')
+        for file in glob.glob("*.dcm"):
+            print(file)
+            if is_dicom(file):
+                print("It is indeed DICOM!")
+                dcm_file = pydicom.dcmread(file)
+            else:
+                print("It's probably not DICOM")
 
 
 class PGConnectDB:
@@ -68,6 +82,13 @@ class StoreData(PGConnectDB):
                 self.dexa = (self.uuid, self.studyDate, self.studyTime, self.json_result)
                 self.cursor.execute(self.sqlinsert, self.dexa)
                 print("Successfully inserted records")
+
+                #Move Dicom File
+                print ("Moving DICON File...")
+                source = 'c:/temp/pending_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
+                destination = 'c:/temp/processed_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
+                shutil.move(source, destination)
+
                 self.conn.commit()
 
 
@@ -222,7 +243,8 @@ def Main():
     #     outfile.write(json_result)
 
     # DICOM File has been parsed to JSON and saved as a new file.
-
+    source_directory = 'c:/temp/pending_dexafit_files/'
+    f = ReadDICOMFiles(source_directory)
 
     #Store in DB
     # Database Connection Details
