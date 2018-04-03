@@ -34,6 +34,7 @@ class ReadDICOMFiles:
                 if is_dicom(file):
                     print("It is indeed DICOM!")
                     dcm_file = pydicom.dcmread(file)
+                    #print(dcm_file)
 
                     parsed_result = {}
                     testType = dcm_file.StudyDescription
@@ -146,7 +147,18 @@ class ReadDICOMFiles:
                     print("It's probably not DICOM")
                     #Handle Error and send notifiction
                     #Move to error directory
-                    shutil.move(file, self.error_directory)
+                    #shutil.move(file, self.error_directory)
+                    try:
+                        shutil.move(file, self.error_directory)
+                    except shutil.Error as e:
+                        print('Error: %s' % e)
+                        os.remove(file)
+                        pass
+                        # eg. source or destination doesn't exist
+                    except IOError as e:
+                        print('Error: %s' % e.strerror)
+                        os.remove(file)
+                        pass
 
 
 
@@ -158,6 +170,7 @@ class PGConnectDB:
         self.dsn_uid = dsn_uid
         self.dsn_pwd = dsn_pwd
 
+        # Error handing needed for connection.
         try:
             conn_string = "host=" + self.dsn_hostname + " port=" + self.dsn_port + " dbname=" + self.dsn_database + " user=" + self.dsn_uid + " password=" + self.dsn_pwd
             print("Connecting to database\n  ->%s" % (conn_string))
@@ -165,6 +178,20 @@ class PGConnectDB:
             print("Connected!\n")
         except:
             print("Unable to connect to the database.")
+            print("conn_error, will retry after 5 seconds:")
+            #print(ibm_db.conn_error())
+            while True:
+                time.sleep(5)
+                try:
+                    conn_string = "host=" + self.dsn_hostname + " port=" + self.dsn_port + " dbname=" + self.dsn_database + " user=" + self.dsn_uid + " password=" + self.dsn_pwd
+                    print("Connecting to database\n  ->%s" % (conn_string))
+                    self.conn = psycopg2.connect(conn_string)
+                    print("Connected!\n")
+                    if (self.conn):
+                        print("Connection reconnected to :" + self.dsn_database)
+                        break
+                except:
+                    print("NO connection to :" + self.dsn_database)
 
 
 class StoreData(PGConnectDB):
@@ -184,6 +211,8 @@ class StoreData(PGConnectDB):
                 # Select UUID from dexafit.userinfo
                 self.cursor = self.conn.cursor()
                 psycopg2.extras.register_uuid() # What is this for ?
+
+                # Error handing needed for SQL and connection.
                 sqlselect = "select userid from dexafit.userinfo where dexafitpatientid = %s;"
                 dexafitUUID = (data_from_q[0],)
                 self.cursor.execute(sqlselect, dexafitUUID)
@@ -191,12 +220,14 @@ class StoreData(PGConnectDB):
                 self.uuid = self.cursor.fetchone()
                 print(self.uuid)
 
+
                 # insert with uuid and json
                 self.json_result = data_from_q[1]
                 self.studyDate = data_from_q[2]
                 self.studyTime = data_from_q[3]
                 self.file = data_from_q[4]
 
+                # Error handing needed for SQL and connection.
                 self.sqlinsert = "INSERT into dxa.dxatest_sudip (userid, testdate, testtime, results) VALUES(%s, %s, %s, %s);"
                 self.dexa = (self.uuid, self.studyDate, self.studyTime, self.json_result)
                 self.cursor.execute(self.sqlinsert, self.dexa)
@@ -215,10 +246,12 @@ class StoreData(PGConnectDB):
                 except shutil.Error as e:
                     print('Error: %s' % e)
                     self.conn.rollback()
+                    os.remove(self.file)
                     # eg. source or destination doesn't exist
                 except IOError as e:
                     print('Error: %s' % e.strerror)
                     self.conn.rollback()
+                    os.remove(self.file)
 
 
 
@@ -276,7 +309,7 @@ def Main():
     dsn_pwd = "$$dicomaws$$"  # e.g. "xxx"
 
     s = StoreData(dsn_hostname ,dsn_port,  dsn_database, dsn_uid, dsn_pwd)
-    st = threading.Thread(target=s.retrieve_and_store, name = 'Retrieve Q Data', args=())
+    st = threading.Thread(target=s.retrieve_and_store, name = 'Retrieve Q Data and insert into PG', args=())
     st.start()
     #st.join()
 
