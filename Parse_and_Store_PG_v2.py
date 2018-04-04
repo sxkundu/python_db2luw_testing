@@ -10,7 +10,7 @@ import time
 import glob, os, shutil
 
 # import dicom
-
+#https://github.com/pydicom/pydicom/wiki/Porting-to-pydicom-1.0
 '''
 Helper Methods
 '''
