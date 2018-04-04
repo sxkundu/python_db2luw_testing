@@ -309,6 +309,8 @@ def Main():
     # Change to os.walk path
 
 
+
+
     # When ready to save as JSON file.
     # with open('DXAParse.json','w') as outfile:
     #     outfile.write(json_result)
@@ -322,11 +324,19 @@ def Main():
 
     #Store in DB
     # Database Connection Details
-    dsn_database = "dexafitpostgres"  # e.g. "compose"
-    dsn_hostname = "dexafit-postgres-instance.cnhfhogvgcm2.us-east-2.rds.amazonaws.com"  # e.g.: "aws-us-east-1-portal.4.dblayer.com"
-    dsn_port = "5432"  # e.g. 11101
-    dsn_uid = "aws_dexafit"  # e.g. "admin"
-    dsn_pwd = "$$dicomaws$$"  # e.g. "xxx"
+    #dsn_database = "dexafitpostgres"  # e.g. "compose"
+    #dsn_hostname = "dexafit-postgres-instance.cnhfhogvgcm2.us-east-2.rds.amazonaws.com"  # e.g.: "aws-us-east-1-portal.4.dblayer.com"
+    #dsn_port = "5432"  # e.g. 11101
+    #dsn_uid = "aws_dexafit"  # e.g. "admin"
+    #dsn_pwd = "$$dicomaws$$"  # e.g. "xxx"
+
+    # Read app info from text file
+    with open('PG_Connection.cfg', 'r') as pg_db_cfg:
+        dsn_database = pg_db_cfg.readline().strip()
+        dsn_hostname = pg_db_cfg.readline().strip()
+        dsn_port = pg_db_cfg.readline().strip()
+        dsn_uid = pg_db_cfg.readline().strip()
+        dsn_pwd = pg_db_cfg.readline().strip()
 
     s = StoreData(dsn_hostname ,dsn_port,  dsn_database, dsn_uid, dsn_pwd)
     st = threading.Thread(target=s.retrieve_and_store, name = 'Retrieve Q Data and insert into PG', args=())

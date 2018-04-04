@@ -10,7 +10,7 @@ from boxsdk import Client, OAuth2
 from boxsdk import JWTAuth
 from io import BytesIO
 
-#pip install "boxsdk[jwt]" ###(View-> Terminal)
+#pip install "boxsdk[jwt]" ###(View-> "Tool Windows"-> Terminal)
 
 '''
 Helper Methods

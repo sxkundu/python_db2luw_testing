@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="PostgreSQL - dexafitpostgres@dexafit-postgres-instance.cnhfhogvgcm2.us-east-2.rds.amazonaws.com" uuid="78caad42-b582-4a25-99e4-93985069b8db">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dexafit-postgres-instance.cnhfhogvgcm2.us-east-2.rds.amazonaws.com:5432/dexafitpostgres</jdbc-url>
+    </data-source>
+  </component>
+</project>
