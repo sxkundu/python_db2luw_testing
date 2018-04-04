@@ -34,7 +34,7 @@ class ReadDICOMFiles:
                 if is_dicom(file):
                     print("It is indeed DICOM!")
                     dcm_file = pydicom.dcmread(file)
-                    #print(dcm_file)
+                    print(dcm_file)
 
                     parsed_result = {}
                     testType = dcm_file.StudyDescription
@@ -113,7 +113,7 @@ class ReadDICOMFiles:
                                 continue
                             key = lowerCamelCase(reading.tag)
                             # units = reading.attrib['units'].strip()
-                            value = float(reading.text)
+                            # value = float(reading.text)
                             parsed_result["BMD"][regionName][key] = value
 
                     parsed_result["visceralFat"] = {}
@@ -203,10 +203,14 @@ class StoreData(PGConnectDB):
         print(self.conn)
         while True:
             if not global_fifo_q.empty():
+                #Get data from FIFO queue
                 data_from_q = global_fifo_q.get()
+
+                self.file = data_from_q[4]
+
                 print("Printing data in queue prior to storage..")
-                print(data_from_q[0])
-                print(data_from_q[1])
+                #print(data_from_q[0])
+                #print(data_from_q[1])
 
                 # Select UUID from dexafit.userinfo
                 self.cursor = self.conn.cursor()
@@ -220,38 +224,54 @@ class StoreData(PGConnectDB):
                 self.uuid = self.cursor.fetchone()
                 print(self.uuid)
 
+                if (self.uuid):
+                    # insert with uuid and json
+                    self.json_result = data_from_q[1]
+                    self.studyDate = data_from_q[2]
+                    self.studyTime = data_from_q[3]
 
-                # insert with uuid and json
-                self.json_result = data_from_q[1]
-                self.studyDate = data_from_q[2]
-                self.studyTime = data_from_q[3]
-                self.file = data_from_q[4]
+                    # Error handing needed for SQL and connection.
+                    self.sqlinsert = "INSERT into dxa.dxatest_sudip (userid, testdate, testtime, results) VALUES(%s, %s, %s, %s);"
+                    self.dexa = (self.uuid, self.studyDate, self.studyTime, self.json_result)
+                    self.cursor.execute(self.sqlinsert, self.dexa)
+                    print("Successfully inserted records")
 
-                # Error handing needed for SQL and connection.
-                self.sqlinsert = "INSERT into dxa.dxatest_sudip (userid, testdate, testtime, results) VALUES(%s, %s, %s, %s);"
-                self.dexa = (self.uuid, self.studyDate, self.studyTime, self.json_result)
-                self.cursor.execute(self.sqlinsert, self.dexa)
-                print("Successfully inserted records")
+                    #Move Dicom File
+                    print ("Moving DICOM File...")
+                    #source = 'c:/temp/pending_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
+                    #destination = 'c:/temp/processed_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
+                    source = self.file
+                    destination = 'c:/temp/processed_dexafit_files/'
 
-                #Move Dicom File
-                print ("Moving DICOM File...")
-                #source = 'c:/temp/pending_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
-                #destination = 'c:/temp/processed_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
-                source = self.file
-                destination = 'c:/temp/processed_dexafit_files/'
-
-                try:
-                    shutil.move(source, destination)
-                    self.conn.commit()
-                except shutil.Error as e:
-                    print('Error: %s' % e)
-                    self.conn.rollback()
-                    os.remove(self.file)
-                    # eg. source or destination doesn't exist
-                except IOError as e:
-                    print('Error: %s' % e.strerror)
-                    self.conn.rollback()
-                    os.remove(self.file)
+                    try:
+                        shutil.move(source, destination)
+                        self.conn.commit()
+                    except shutil.Error as e:
+                        print('Error: %s' % e)
+                        self.conn.rollback()
+                        os.remove(self.file)
+                        # eg. source or destination doesn't exist
+                    except IOError as e:
+                        print('Error: %s' % e.strerror)
+                        self.conn.rollback()
+                        os.remove(self.file)
+                else:
+                    print ("Missing UUID")
+                    print("Moving DICOM File...")
+                    source = self.file
+                    destination = 'c:/temp/incomplete_dexafit_files/'
+                    try:
+                        shutil.move(source, destination)
+                        self.conn.rollback()
+                    except shutil.Error as e:
+                        print('Error: %s' % e)
+                        self.conn.rollback()
+                        os.remove(self.file)
+                        # eg. source or destination doesn't exist
+                    except IOError as e:
+                        print('Error: %s' % e.strerror)
+                        self.conn.rollback()
+                        os.remove(self.file)
 
 
 
