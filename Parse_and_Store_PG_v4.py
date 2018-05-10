@@ -1,4 +1,4 @@
-#import threading # Remove Threading and convert to input argument
+import threading
 import sys, getopt
 
 import pprint
@@ -8,6 +8,7 @@ from Dexascan_Parse_and_Store_in_PG_v4 import StoreData
 from Dexascan_Parse_and_Store_in_PG_v4 import ReadDICOMFiles
 
 from Dexascan_Parse_and_Store_in_PG_v4 import ReadDICOMFile
+from Dexascan_Parse_and_Store_in_PG_v4 import StoreDataSinglePass
 
 
 def Main(argv):
@@ -41,13 +42,17 @@ def Main(argv):
     pp.pprint(parsed_dictionary_data)
     #print(parsed_dictionary_data.items())
 
-    parsed_dictionary_data_BMD = f.get_parsed_result_BMD()
+    parsed_dictionary_data_bmd = f.get_parsed_result_bmd()
     #print(parsed_dictionary_data_BMD.items())
-    pp.pprint(parsed_dictionary_data_BMD)
+    pp.pprint(parsed_dictionary_data_bmd)
 
     parsed_dictionary_data_UID = f.get_parsed_result_UID()
     # print(parsed_dictionary_data_BMD.items())
     pp.pprint(parsed_dictionary_data_UID)
+
+    parsed_dictionary_data_bodycomp = f.get_parsed_result_bodycomposition()
+    # print(parsed_dictionary_data_BMD.items())
+    pp.pprint(parsed_dictionary_data_bodycomp)
 
     # Read DB  info from text file
 
@@ -69,7 +74,13 @@ def Main(argv):
     st = threading.Thread(target=s.retrieve_and_store, name = 'Retrieve Q Data and insert into PG', args=(incomplete_directory,processed_directory,))
     st.start()
     '''
-
+    '''
+    s = StoreDataSinglePass(dsn_hostname, dsn_port, dsn_database, dsn_uid, dsn_pwd)
+    st = threading.Thread(target=s.retrieve_and_store, name='Retrieve Q Data and insert into PG',
+                          args=(incomplete_directory, processed_directory,))
+    st.start()
+    st.join()
+    '''
 if __name__ == '__main__':
     Main(sys.argv[1:])
 

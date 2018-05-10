@@ -248,14 +248,140 @@ class ReadDICOMFile:
         self.input_dicom_file = input_dicom_file
         self.error_directory = error_directory
         self.parsed_result = None
+        self.json_result = None
+        #self.BMD_result =[]
         print ('In Single ReadDICOMFile...')
 
     def get_parsed_result(self):
         return self.parsed_result
 
-    def get_parsed_result_BMD(self):
-        return self.parsed_result["BMD"]["total"]
+    def get_parsed_result_bmd(self):
 
+        return (self.parsed_result["testInfo"]["seriesInstanceUID"],
+                self.parsed_result["BMD"]["arms"]["bmd"],
+                self.parsed_result["BMD"]["head"]["bmd"],
+                self.parsed_result["BMD"]["legs"]["bmd"],
+                self.parsed_result["BMD"]["pelvis"]["bmd"],
+                self.parsed_result["BMD"]["ribs"]["bmd"],
+                self.parsed_result["BMD"]["spine"]["bmd"],
+                self.parsed_result["BMD"]["trunk"]["bmd"],
+                self.parsed_result["BMD"]["total"]["bmd"],
+                self.parsed_result["BMD"]["total"]["bmdTscore"],
+                self.parsed_result["BMD"]["total"]["bmdZscore"]
+                )
+
+
+    def get_parsed_result_bodycomposition(self):
+
+        return (self.parsed_result["testInfo"]["seriesInstanceUID"],
+                self.parsed_result["bodyComposition"]["android"]["bmc"],
+                self.parsed_result["bodyComposition"]["android"]["fatMass"],
+                self.parsed_result["bodyComposition"]["android"]["leanMass"],
+                self.parsed_result["bodyComposition"]["android"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["android"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["armLeft"]["bmc"],
+                self.parsed_result["bodyComposition"]["armLeft"]["fatMass"],
+                self.parsed_result["bodyComposition"]["armLeft"]["leanMass"],
+                self.parsed_result["bodyComposition"]["armLeft"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["armLeft"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["armRight"]["bmc"],
+                self.parsed_result["bodyComposition"]["armRight"]["fatMass"],
+                self.parsed_result["bodyComposition"]["armRight"]["leanMass"],
+                self.parsed_result["bodyComposition"]["armRight"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["armRight"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["arms"]["bmc"],
+                self.parsed_result["bodyComposition"]["arms"]["fatMass"],
+                self.parsed_result["bodyComposition"]["arms"]["leanMass"],
+                self.parsed_result["bodyComposition"]["arms"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["arms"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["armsDiff"]["bmc"],
+                self.parsed_result["bodyComposition"]["armsDiff"]["fatMass"],
+                self.parsed_result["bodyComposition"]["armsDiff"]["leanMass"],
+                self.parsed_result["bodyComposition"]["armsDiff"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["armsDiff"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["gynoid"]["bmc"],
+                self.parsed_result["bodyComposition"]["gynoid"]["fatMass"],
+                self.parsed_result["bodyComposition"]["gynoid"]["leanMass"],
+                self.parsed_result["bodyComposition"]["gynoid"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["gynoid"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["legLeft"]["bmc"],
+                self.parsed_result["bodyComposition"]["legLeft"]["fatMass"],
+                self.parsed_result["bodyComposition"]["legLeft"]["leanMass"],
+                self.parsed_result["bodyComposition"]["legLeft"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["legLeft"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["legRight"]["bmc"],
+                self.parsed_result["bodyComposition"]["legRight"]["fatMass"],
+                self.parsed_result["bodyComposition"]["legRight"]["leanMass"],
+                self.parsed_result["bodyComposition"]["legRight"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["legRight"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["legs"]["bmc"],
+                self.parsed_result["bodyComposition"]["legs"]["fatMass"],
+                self.parsed_result["bodyComposition"]["legs"]["leanMass"],
+                self.parsed_result["bodyComposition"]["legs"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["legs"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["legsDiff"]["bmc"],
+                self.parsed_result["bodyComposition"]["legsDiff"]["fatMass"],
+                self.parsed_result["bodyComposition"]["legsDiff"]["leanMass"],
+                self.parsed_result["bodyComposition"]["legsDiff"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["legsDiff"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["totalLeft"]["bmc"],
+                self.parsed_result["bodyComposition"]["totalLeft"]["fatMass"],
+                self.parsed_result["bodyComposition"]["totalLeft"]["leanMass"],
+                self.parsed_result["bodyComposition"]["totalLeft"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["totalLeft"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["totalRight"]["bmc"],
+                self.parsed_result["bodyComposition"]["totalRight"]["fatMass"],
+                self.parsed_result["bodyComposition"]["totalRight"]["leanMass"],
+                self.parsed_result["bodyComposition"]["totalRight"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["totalRight"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["total"]["bmc"],
+                self.parsed_result["bodyComposition"]["total"]["fatMass"],
+                self.parsed_result["bodyComposition"]["total"]["leanMass"],
+                self.parsed_result["bodyComposition"]["total"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["total"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["totalDiff"]["bmc"],
+                self.parsed_result["bodyComposition"]["totalDiff"]["fatMass"],
+                self.parsed_result["bodyComposition"]["totalDiff"]["leanMass"],
+                self.parsed_result["bodyComposition"]["totalDiff"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["totalDiff"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["trunkLeft"]["bmc"],
+                self.parsed_result["bodyComposition"]["trunkLeft"]["fatMass"],
+                self.parsed_result["bodyComposition"]["trunkLeft"]["leanMass"],
+                self.parsed_result["bodyComposition"]["trunkLeft"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["trunkLeft"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["trunkRight"]["bmc"],
+                self.parsed_result["bodyComposition"]["trunkRight"]["fatMass"],
+                self.parsed_result["bodyComposition"]["trunkRight"]["leanMass"],
+                self.parsed_result["bodyComposition"]["trunkRight"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["trunkRight"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["trunk"]["bmc"],
+                self.parsed_result["bodyComposition"]["trunk"]["fatMass"],
+                self.parsed_result["bodyComposition"]["trunk"]["leanMass"],
+                self.parsed_result["bodyComposition"]["trunk"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["trunk"]["totalMass"],
+
+                self.parsed_result["bodyComposition"]["trunkDiff"]["bmc"],
+                self.parsed_result["bodyComposition"]["trunkDiff"]["fatMass"],
+                self.parsed_result["bodyComposition"]["trunkDiff"]["leanMass"],
+                self.parsed_result["bodyComposition"]["trunkDiff"]["regionPfat"],
+                self.parsed_result["bodyComposition"]["trunkDiff"]["totalMass"]
+                )
 
     def get_parsed_result_UID(self):
         return self.parsed_result["testInfo"]["seriesInstanceUID"]
@@ -268,7 +394,7 @@ class ReadDICOMFile:
         #    time.sleep(10)
         #for file in glob.glob("*.dcm"):
         file = self.input_dicom_file
-        print(file)
+        #print(file)
         if is_dicom(file):
             print("It is indeed DICOM!")
             dcm_file = pydicom.dcmread(file)
@@ -299,10 +425,12 @@ class ReadDICOMFile:
             }
             user_firstName = dcm_file.PatientName.given_name
             user_lastName = dcm_file.PatientName.family_name
-            user_id = dcm_file.PatientID
             ethnic_group = dcm_file.EthnicGroup
             user_birthdate = dcm_file.PatientBirthDate
             user_sex = dcm_file.PatientSex
+            user_id = dcm_file.PatientID
+            if user_id is '':
+                user_id = str(user_firstName) + "." + str(user_lastName) + "." + str(user_birthdate) + "@noemail.unk"
             user_age = dcm_file.PatientAge
             user_Size = dcm_file.PatientSize
             user_Weight = dcm_file.PatientWeight
@@ -374,13 +502,14 @@ class ReadDICOMFile:
                     parsed_result["visceralFat"][regionName][key] = value
 
             # convert it all to JSON and Save
-            json_result = json.dumps(parsed_result)
-            print(json_result)
+            self.json_result = json.dumps(parsed_result)
+            print(self.json_result)
 
             self.parsed_result = parsed_result
 
             # Add data to queue
-            data_to_process = (user_id, json_result, studyDate, studyTime, file)
+            #data_to_process = (user_id, self.json_result, studyDate, studyTime, file)
+            data_to_process = (user_id, self.json_result, studyDate, studyTime, file, user_firstName, user_lastName, user_birthdate, studyInstanceUID  )
             global_fifo_q.put(data_to_process)
 
         else:
@@ -402,6 +531,110 @@ class ReadDICOMFile:
                 pass
 
 
+
+
+class StoreDataSinglePass(PGConnectDB):
+    pass
+
+    def retrieve_and_store(self, incomplete_directory, processed_directory):
+        self.incomplete_directory = incomplete_directory
+        self.processed_directory = processed_directory
+        global global_fifo_q
+        print('In Store Data Single PAss')
+        print(self.conn)
+        if not global_fifo_q.empty():
+            #Get data from FIFO queue
+            data_from_q = global_fifo_q.get()
+
+            self.file = data_from_q[4]
+
+            print("Printing data in queue prior to storage..")
+            #print(data_from_q[0])
+            #print(data_from_q[1])
+
+            # Select UUID from dexafit.userinfo
+            self.cursor = self.conn.cursor()
+            psycopg2.extras.register_uuid() # What is this for ?
+
+            # Error handing needed for SQL and connection.
+            sqlselect = "select userid from dexafit.userinfo where dexafitpatientid = %s;"
+            DXA_email_UID = (data_from_q[0],)
+            self.cursor.execute(sqlselect, DXA_email_UID)
+            #print("successfully selected records")
+            self.uuid = self.cursor.fetchone()
+            #print(self.uuid)
+
+            if not (self.uuid):
+                print("Missing user info, will insert with generated DXA email id")
+
+                self.firstname = str(data_from_q[5])
+                self.lastname = str(data_from_q[6])
+                self.birthdate = str(data_from_q[7])
+                self.email = str(data_from_q[0])
+                self.dexafitpatientid = str(data_from_q[0])
+                print (self.firstname, self.lastname, self.email, self.dexafitpatientid)
+
+
+                self.sqlinsert_userinfo = "INSERT into dexafit.userinfo (firstname, lastname, email, dexafitpatientid, birthday) VALUES(%s, %s, %s, %s, %s);"
+                DXA_user_details = (self.firstname ,self.lastname ,self.email, self.dexafitpatientid, self.birthdate, )
+                #print (self.sqlinsert_userinfo)
+                self.cursor.execute(self.sqlinsert_userinfo, DXA_user_details)
+                # Get generated UUID
+                sqlselect = "select userid from dexafit.userinfo where dexafitpatientid = %s;"
+                DXA_email_UID = (data_from_q[0],)
+                self.cursor.execute(sqlselect, DXA_email_UID)
+                self.uuid = self.cursor.fetchone()
+
+            if (self.uuid):
+                # insert with uuid and json
+                self.json_result = data_from_q[1]
+                self.studyDate = data_from_q[2]
+                self.studyTime = data_from_q[3]
+                self.studyInstanceUID = data_from_q[8]
+
+                # Error handing needed for SQL and connection.
+                self.sqlinsert = "INSERT into dxa.dxatest_json (userid, testdate, testtime, results, studyinstanceuid) VALUES(%s, %s, %s, %s, %s);"
+                self.dexa = (self.uuid, self.studyDate, self.studyTime, self.json_result, self.studyInstanceUID)
+                self.cursor.execute(self.sqlinsert, self.dexa)
+                print("Successfully inserted records")
+
+                #Move Dicom File
+                print ("Trying to move DICOM file to:"+self.processed_directory)
+                #source = 'c:/temp/pending_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
+                #destination = 'c:/temp/processed_dexafit_files/1.2.840.113619.2.110.500342.20180111131347.3.1.12.1.dcm'
+                source = self.file
+                #destination = 'c:/temp/processed_dexafit_files/'
+                destination =self.processed_directory
+
+                try:
+                    shutil.move(source, destination)
+                    self.conn.commit()
+                except shutil.Error as e:
+                    print('Error: %s' % e)
+                    self.conn.rollback()
+                    os.remove(self.file)
+                    # eg. source or destination doesn't exist
+                except IOError as e:
+                    print('Error: %s' % e.strerror)
+                    self.conn.rollback()
+                    os.remove(self.file)
+            else:
+                print ("Missing UUID")
+                print("Trying to DICOM file to:"+self.incomplete_directory)
+                source = self.file
+                destination = self.incomplete_directory
+                try:
+                    shutil.move(source, destination)
+                    self.conn.rollback()
+                except shutil.Error as e:
+                    print('Error: %s' % e)
+                    self.conn.rollback()
+                    os.remove(self.file)
+                    # eg. source or destination doesn't exist
+                except IOError as e:
+                    print('Error: %s' % e.strerror)
+                    self.conn.rollback()
+                    os.remove(self.file)
 
 
 
