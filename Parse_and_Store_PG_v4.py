@@ -74,13 +74,13 @@ def Main(argv):
     st = threading.Thread(target=s.retrieve_and_store, name = 'Retrieve Q Data and insert into PG', args=(incomplete_directory,processed_directory,))
     st.start()
     '''
-    '''
+
     s = StoreDataSinglePass(dsn_hostname, dsn_port, dsn_database, dsn_uid, dsn_pwd)
     st = threading.Thread(target=s.retrieve_and_store, name='Retrieve Q Data and insert into PG',
                           args=(incomplete_directory, processed_directory,))
     st.start()
     st.join()
-    '''
+
 if __name__ == '__main__':
     Main(sys.argv[1:])
 
