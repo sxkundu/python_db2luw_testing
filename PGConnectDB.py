@@ -1,10 +1,14 @@
+import threading
 import psycopg2
 import psycopg2.extras
 import time
+import queue
 
 
 
 class PGConnectDB:
+    ins_var_global_fifo_q = queue.Queue()
+    ins_var_tLock = threading.Lock()
     def __init__(self, dsn_hostname, dsn_port, dsn_database, dsn_uid, dsn_pwd):
         self.dsn_hostname = dsn_hostname
         self.dsn_port = dsn_port

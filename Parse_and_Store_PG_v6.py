@@ -2,8 +2,8 @@ import sys, getopt
 
 import pprint
 
-from Dexascan_Parse_and_Store_in_PG_v6 import ReadDICOMFile
-from Dexascan_Parse_and_Store_in_PG_v6 import StoreDataSinglePass
+#from Dexascan_Parse_and_Store_in_PG_v6 import ReadDICOMFile
+#from Dexascan_Parse_and_Store_in_PG_v6 import StoreDataSinglePass
 
 import threading
 from Dexascan_Parse_and_Store_in_PG_v6 import StoreData
@@ -21,7 +21,6 @@ def Main():
     f = ReadDICOMFiles(pending_directory, error_directory)
     ft = threading.Thread(target=f.retrieve, name='Retrieve DICOM Data', args=())
     ft.start()
-
 
 
     # Read DB  info from text file
