@@ -56,6 +56,7 @@ class StoreData(PGConnectDB):
                     # Error handing needed for SQL and connection.
                     self.sqlinsert = "INSERT into dxa.dxatest_sudip (userid, testdate, testtime, results) VALUES(%s, %s, %s, %s);"
                     self.dexa = (self.uuid, self.studyDate, self.studyTime, self.json_result)
+                    #self.dexa = (self.studyDate, self.studyTime, self.json_result)
                     self.cursor.execute(self.sqlinsert, self.dexa)
                     print("Successfully inserted records")
 

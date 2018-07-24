@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27a863d4-3e44-4081-92e2-193695f35b02" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/SXK11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PGConnectDB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parse_and_Store_PG_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PGConnectDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/PGConnectDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parse_and_Store_PG_v6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parse_and_Store_PG_v6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,9 +18,11 @@
     <SUITE FILE_PATH="coverage/python_db2luw_testing$Dexascan_Parse_and_Store_in_PG_v1.coverage" NAME="Dexascan_Parse_and_Store_in_PG_v1 Coverage Results" MODIFIED="1522866130147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_db2luw_testing$ibm_db_cloud_v1.coverage" NAME="ibm_db_cloud_v1 Coverage Results" MODIFIED="1522723492620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_db2luw_testing$postgress_source.coverage" NAME="postgress_source Coverage Results" MODIFIED="1522770881070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_db2luw_testing$Parse_and_Store_PG_v6.coverage" NAME="Parse_and_Store_PG_v6 Coverage Results" MODIFIED="1527818216310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_db2luw_testing$Parse_and_Store_PG_v2.coverage" NAME="Parse_and_Store_PG_v2 Coverage Results" MODIFIED="1522861855804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_db2luw_testing$Retrieve_from_BOX_v1.coverage" NAME="Retrieve_from_BOX_v1 Coverage Results" MODIFIED="1522804512196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_db2luw_testing$Parse_and_Store_PG_v3.coverage" NAME="Parse_and_Store_PG_v3 Coverage Results" MODIFIED="1522869147600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_db2luw_testing$Parse_and_Store_PG_v4.coverage" NAME="Parse_and_Store_PG_v4 Coverage Results" MODIFIED="1525786512837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_db2luw_testing$Retrieve_from_BOX_v1.coverage" NAME="Retrieve_from_BOX_v1 Coverage Results" MODIFIED="1525897518324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_db2luw_testing$Parse_and_Store_PG_v3.coverage" NAME="Parse_and_Store_PG_v3 Coverage Results" MODIFIED="1526430844654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -56,23 +56,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="postgress_source.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/postgress_source.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="219" selection-end-line="255" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1522771201217" expanded="true" signature="7626:7630" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Parse_and_Store_PG_v1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
+            <state relative-caret-position="3238">
               <caret line="265" selection-start-line="265" selection-end-line="265" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -81,23 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parse_and_Store_PG_v2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="161" lean-forward="true" selection-end-line="349" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parse_and_Store_PG_v3.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Parse_and_Store_PG_v3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+              <caret line="13" column="25" selection-start-line="5" selection-end-line="34" selection-end-column="10" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -108,8 +83,20 @@
       <file leaf-file-name="Dexascan_Parse_and_Store_in_PG_v1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="1368">
+              <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Retrieve_from_BOX_v1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="79" column="32" lean-forward="true" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -120,28 +107,44 @@
       <file leaf-file-name="PGConnectDB.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PGConnectDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="684">
+              <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PG_Connection.cfg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PG_Connection.cfg">
+      <file leaf-file-name="Parse_and_Store_PG_v4.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            <state relative-caret-position="1008">
+              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Retrieve_from_BOX_v1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v1.py">
+      <file leaf-file-name="Parse_and_Store_PG_v5.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="378">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dexascan_Parse_and_Store_in_PG_v5.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="437" selection-start-line="435" selection-start-column="12" selection-end-line="437" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -149,20 +152,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+      <file leaf-file-name="Dexascan_Parse_and_Store_in_PG_v6.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="769">
+              <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ibm_db_v2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ibm_db_v2.py">
+      <file leaf-file-name="Parse_and_Store_PG_v6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="173" column="76" selection-start-line="163" selection-start-column="24" selection-end-line="173" selection-end-column="76" />
+            <state relative-caret-position="270">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,6 +189,8 @@
     <findStrings>
       <find>dicom</find>
       <find>user_id</find>
+      <find>comm</find>
+      <find>global_fifo_q</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,7 +201,6 @@
       <list>
         <option value="$PROJECT_DIR$/postgress_source.py" />
         <option value="$PROJECT_DIR$/Retrieve_from_BOX_v2.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/78caad42-b582-4a25-99e4-93985069b8db/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
         <option value="$PROJECT_DIR$/Retrieve_from_BOX_v1.py" />
         <option value="$PROJECT_DIR$/app.cfg" />
@@ -198,8 +208,17 @@
         <option value="$PROJECT_DIR$/PG_Connection.cfg" />
         <option value="$PROJECT_DIR$/Parse_and_Store_PG_v2.py" />
         <option value="$PROJECT_DIR$/Parse_and_Store_PG_v3.py" />
-        <option value="$PROJECT_DIR$/PGConnectDB.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/78caad42-b582-4a25-99e4-93985069b8db/console.sql" />
+        <option value="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v4py" />
+        <option value="$PROJECT_DIR$/Parse_and_Store_PG_v4.py" />
         <option value="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v1.py" />
+        <option value="$PROJECT_DIR$/tables" />
+        <option value="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v4.py" />
+        <option value="$PROJECT_DIR$/Parse_and_Store_PG_v5.py" />
+        <option value="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v5.py" />
+        <option value="$PROJECT_DIR$/PGConnectDB.py" />
+        <option value="$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v6.py" />
+        <option value="$PROJECT_DIR$/Parse_and_Store_PG_v6.py" />
       </list>
     </option>
   </component>
@@ -210,16 +229,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="725" />
+    <option name="x" value="-11" />
+    <option name="width" value="2978" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,13 +258,18 @@
             <path>
               <item name="python_db2luw_testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="78caad42-b582-4a25-99e4-93985069b8db" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="python_db2luw_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
               <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,6 +279,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sxk11\Documents\GitHub\python_db2luw_testing" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -268,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Parse_and_Store_PG_v3">
+  <component name="RunManager" selected="Python.Parse_and_Store_PG_v6">
     <configuration name="Dexascan_Parse_and_Store_in_PG_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_db2luw_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -345,6 +374,44 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Parse_and_Store_PG_v4" type="PythonConfigurationType" factoryName="Python">
+      <module name="python_db2luw_testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parse_and_Store_PG_v4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Parse_and_Store_PG_v6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_db2luw_testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parse_and_Store_PG_v6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Retrieve_from_BOX_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_db2luw_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -403,6 +470,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
+      <item itemvalue="Python.Parse_and_Store_PG_v4" />
       <item itemvalue="Python.Parse_and_Store_PG_v1" />
       <item itemvalue="Python.Parse_and_Store_PG_v2" />
       <item itemvalue="Python.Parse_and_Store_PG_v3" />
@@ -410,11 +478,13 @@
       <item itemvalue="Python.Retrieve_from_BOX_v1" />
       <item itemvalue="Python.ibm_db_cloud_v1" />
       <item itemvalue="Python.Dexascan_Parse_and_Store_in_PG_v1" />
+      <item itemvalue="Python.Parse_and_Store_PG_v6" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Dexascan_Parse_and_Store_in_PG_v1" />
+        <item itemvalue="Python.Parse_and_Store_PG_v6" />
         <item itemvalue="Python.Retrieve_from_BOX_v1" />
+        <item itemvalue="Python.Dexascan_Parse_and_Store_in_PG_v1" />
         <item itemvalue="Python.ibm_db_cloud_v1" />
       </list>
     </recent_temporary>
@@ -437,51 +507,52 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3295107" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2826421" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3295107" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25076452" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295107" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29109064" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13510348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.329429" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3284101" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32874617" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="8" visible="true" weight="0.3295107" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532943" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.5244095" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532943" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.5244095" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3295107" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3295107" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" visible="true" weight="0.32913387" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3295107" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,6 +573,93 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4608">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="161" selection-end-line="349" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/78caad42-b582-4a25-99e4-93985069b8db/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PGConnectDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PG_Connection.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ibm_db_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="173" column="76" selection-start-line="163" selection-start-column="24" selection-end-line="173" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ibm_db_cloud_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -544,68 +702,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/threading.py">
+    <entry file="file://$PROJECT_DIR$/app.cfg" />
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4392">
-          <caret line="888" lean-forward="true" selection-start-line="888" selection-end-line="888" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ibm_db_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="173" column="76" selection-start-line="163" selection-start-column="24" selection-end-line="173" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="161" selection-end-line="349" />
           <folding>
-            <element signature="e#1#34#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/78caad42-b582-4a25-99e4-93985069b8db/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="265" selection-start-line="265" selection-end-line="265" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -616,29 +727,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v2.py">
+    <entry file="file://$PROJECT_DIR$/ibm_db_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="161" lean-forward="true" selection-end-line="349" />
+        <state relative-caret-position="3078">
+          <caret line="173" column="76" selection-start-line="163" selection-start-column="24" selection-end-line="173" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v4py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="914" selection-start-line="914" selection-end-line="914" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tables">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="24" />
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="24" />
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="24" />
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="24" />
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="24" />
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="24" />
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="24" />
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="24" />
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="24" />
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="24" />
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="24" />
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="24" />
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="24" />
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="24" />
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="24" />
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="24" />
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="24" />
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="24" />
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="24" />
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="24" />
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="24" />
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="24" />
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="24" />
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="24" />
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="24" />
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="24" />
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="24" />
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="24" />
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="24" />
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="24" />
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="24" />
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="24" />
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="24" />
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="24" />
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="24" />
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="24" />
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="24" />
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="24" />
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="24" />
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="24" />
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="24" />
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="24" />
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="24" />
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="24" />
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="24" />
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="24" />
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="24" />
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="24" />
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="24" />
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="24" />
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="24" />
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="24" />
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="24" />
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="24" />
+          <caret line="64" column="24" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="24" />
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="24" />
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="24" />
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="24" />
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="24" />
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="24" />
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="24" />
+          <caret line="71" column="24" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="24" />
+          <caret line="72" column="24" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="24" />
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="24" />
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="24" />
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="24" />
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="24" />
+          <caret line="77" column="24" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="24" />
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="24" />
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="24" />
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="24" />
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="2" selection-end-line="81" selection-end-column="24" />
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="24" />
+          <caret line="83" column="24" selection-start-line="83" selection-start-column="2" selection-end-line="83" selection-end-column="24" />
+          <caret line="84" column="24" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="24" />
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="24" />
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="24" />
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="24" />
+          <caret line="88" column="24" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="24" />
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="2" selection-end-line="89" selection-end-column="24" />
+          <caret line="90" column="24" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="24" />
+          <caret line="91" column="24" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="24" />
+          <caret line="92" column="24" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="24" />
+          <caret line="93" column="24" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="24" />
+          <caret line="94" column="24" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="24" />
+          <caret line="95" column="24" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="844" column="43" lean-forward="true" selection-start-line="844" selection-start-column="43" selection-end-line="844" selection-end-column="43" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PGConnectDB.py">
+    <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="774">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Retrieve_from_BOX_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="79" column="32" lean-forward="true" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="1368">
+          <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3238">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -648,9 +910,59 @@
     <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <caret line="13" column="25" selection-start-line="5" selection-end-line="34" selection-end-column="10" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PGConnectDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="437" selection-start-line="435" selection-start-column="12" selection-end-line="437" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dexascan_Parse_and_Store_in_PG_v6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse_and_Store_PG_v6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
